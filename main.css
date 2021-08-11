@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    background: #e9ecef;
+}
+.head-container{
+    position: fixed;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    color: #343A40;
+    cursor: pointer;
+}
+li{
+    display: inline-block;
+}
+.navbar li{
+    padding-left: 10px;
+
+}
+li p{
+    font-family: "vremenagrotesk",sans-serif;
+    padding-left: 7px;
+}
+.name{
+    display: flex;
+    /* position: fixed; */
+    border: 4px solid #343A40;
+    border-radius: 15px;
+    padding: 5px;
+    align-items: center;
+}
+.language {
+    overflow: hidden;
+    font-family: "vremenagrotesk",sans-serif;
+    /* padding-right: 400px; */
+}
+.language a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+li .fab :active{
+    color: #bcac76;
+}
+li .fab:hover{
+    color: #bcac76;
+}
+
+
+.topnav {
+    overflow: hidden;
+    font-family: "vremenagrotesk",sans-serif;
+    /* background-color: #e9e9e9; */
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    color: #000;
+    /* color: #d3d3d3; */
+}
+.topnav a.active {
+    /* background-color: #2196F3; */
+    color: black;
+}
+.icon{
+    display: inline-block;
+    padding-left: 50px;
+}
+.icon a:hover{
+    color: #bcac76;
+}
+.topnav .search-container {
+    float: right;
+}
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #adadad;
+
+}
+.topnav input[type=text]:hover{
+    border-bottom: 1px solid black;
+}
+.topnav .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #adadad;
+    cursor: pointer;
+}
+.topnav .search-container button:hover {
+    border-bottom: 1px solid black;
+}
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border-bottom: 1px solid #ccc;  
+    }
+}
+
+
+
+.f-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: "vremenagrotesk",sans-serif;
+    /* width: 1140px; */
+    margin: 0px 380px;
+    margin-top: 90px;
+}
+.f-row{
+    width: 800px;
+    height: 300px;
+}
+.horizontal-line{
+    display: inline-block;
+    position: absolute;
+    border-top: 1px solid #000;
+    margin: 8px 0px 0px;
+    width: 100px;
+    height: 00px;
+}
+.text-container h6{
+    font-size: 16px;
+    text-transform: uppercase !important;
+    letter-spacing: 5px;
+    color: #bcac76;
+    padding-left: 200px;
+    margin: 0px 0px 16px;
+}
+.textone{
+    font-size: 72px;
+    padding-left: 200px;
+    margin: 0px 0px 48px;
+}
+.text-container p{
+    font-size: 20px;
+    color: #868e96;
+    padding-left: 200px;
+    margin: 0px 0px 16px;
+}
+.textwo{
+    font-size: 72px;
+    width: 850px;
+    padding-left: 200px;
+    margin: 0px 0px 48px;
+}
+.history{
+    display: flex;
+    width: 1140px;
+    margin: 0px 100px;
+}
+.img-left {
+    position: relative;
+    height: auto;
+    padding: 0px 15px;
+}
+.img-right{
+    float: right;
+}
+.text-right h6{
+    position: absolute;
+    font-size: 16px;
+    color: #868e96;
+    text-transform: uppercase !important;
+    letter-spacing: 5px;
+    left: 600px;
+    bottom: 800px;
+    margin: 0px 0px 4px;
+}
+.text-right h2{
+    position: absolute;
+    font-size: 32px;
+    color: #000;
+    left: 600px;
+    bottom: 730px;
+    margin: 0px 0px 24px;
+}
+.right{
+    font-size: 16px;
+    color: #868e96;
+    padding-left: 600px;
+    margin: 0px 0px 16px;
+}
+.text-left h6{
+    font-size: 16px;
+    color: #868e96;
+    text-transform: uppercase !important;
+    letter-spacing: 5px;
+    margin: 0px 0px 4px;
+}
+.text-left h2{
+    font-size: 32px;
+    color: #000;
+    margin: 0px 0px 24px;
+}
+.left{
+    position: absolute;
+    font-size: 16px;
+    color: #868e96;
+    width: 540px;
+    margin: 0px 0px 16px;
+}
+
+
+
+.time-container{
+    position: relative;
+    font-family: "vremenagrotesk",sans-serif;
+    width: 100%;
+    height: 600px;
+    background: #f8f9fa;
+    margin: 96px 0px;
+}
+
+.var-container{
+    margin: 0px 0px 24px;
+    padding: 0px 15px;
+}
+
+.col-left h2{
+    position: absolute;
+    font-size: 32px;
+    left: 470px;
+    margin: 190px 0px 24px;
+}
+
+.col-left p{
+    position: absolute;
+    font-size: 20px;
+    color: #868e96;
+    margin-top: 250px;
+    left: 470px;
+    width: 450px;
+    height: 100px;
+}
+
+.time-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    position: absolute;
+    margin-top: 200px;
+    left: 1000px;
+    width: 600px;
+    height: 120px;
+}
+
+.col-right h4{
+    font-size: 24px;
+    margin: 0px 0px 8px;
+}
+
+.col-right p{
+    font-size: 16px;
+    color: #868e96;
+    margin: 0px 0px 16px;
+}
+
+
+
+.u-container{
+    position: relative;
+    font-family: "vremenagrotesk",sans-serif;
+    width: 1900px;
+    height: 500px;
+}
+
+.u-left img{
+    position: absolute;
+    left: 500px;
+    border-radius: 50%;
+}
+
+.u-right p{
+    position: absolute;
+    font-size: 32px;
+    width: 540px;
+    font-family: "Playfair Display",serif !important;
+    left: 1000px;
+    line-height: 50px;
+    margin: 20px 0px 24px;
+}
+
+#right {
+    position: absolute;
+    font-size: 16px;
+    color: #868e96;
+    font-family: "vremenagrotesk",sans-serif !important;
+    line-height: 1.5 !important;
+    left: 1000px;
+    margin: 280px 0px 16px;
+}
+
+.u-right h6{
+    position: absolute;
+    font-size: 20px;
+    color: #bcac76;
+    left: 1000px;
+    margin: 230px 0px 16px;
+}
+
+
+
+.people-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: "vremenagrotesk",sans-serif;
+    /* width: 1140px; */
+    margin: 0px 380px;
+    margin-top: 90px;
+}
+
+.p-row{
+    width: 800px;
+    height: 300px;
+}
+
+.p-horizontal-line{
+    display: inline-block;
+    position: absolute;
+    border-top: 1px solid #000;
+    margin: 8px 0px 0px;
+    width: 100px;
+    height: 00px;
+}
+
+.p-text-container h6{
+    font-size: 16px;
+    text-transform: uppercase !important;
+    letter-spacing: 5px;
+    color: #bcac76;
+    padding-left: 200px;
+    margin: 0px 0px 16px;
+}
+
+.p-text-container p{
+    font-size: 20px;
+    color: #868e96;
+    padding-left: 200px;
+    margin: 0px 0px 16px;
+}
+
+.p-text{
+    font-size: 72px;
+    padding-left: 200px;
+    margin: 0px 0px 48px;
+}
+
+.p-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 250px;
+}
+
+.p-row h4{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 0px 4px;
+}
+
+.p-row p{
+    font-size: 14px;
+    text-align: center;
+    color: #868e96;
+    margin: 0px 0px 16px;
+}
+
+.col1{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+
+.col2{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+.col3{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+.col4{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+.col5{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+.col6{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+.col7{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+.col8{
+    margin: 0px 0px 24px;
+    padding: 0px 20px;
+}
+
+
+
+.swipe{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background: #f8f9fa;
+    margin: 300px 0px 16px;
+    padding-left: 500px;
+    overflow-y: hidden;
+    transform: translate(0, 30%);
+}
+
+.slide-1{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.slide-2{
+    display: flex;
+    position: relative;    
+    align-items: center;
+}
+
+.swipe img{
+    padding-left: 30px;
+    transition: 2s;
+}
+
+.v-row{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "vremenagrotesk",sans-serif;
+}
+
+.v-row h2{
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    left: 450px;
+    margin: 200px 0px 96px;
+    width: 920px;
+    height: 470px;
+}
+
+.one{
+    position: absolute;
+    font-size: 14px;
+    left: 450px;
+    color: #868e96;
+    width: 440px;
+    height: 50px;
+    margin: 350px 0px 16px;
+}
+
+.two{
+    position: absolute;
+    font-size: 14px;
+    left: 970px;
+    color: #868e96;
+    width: 440px;
+    height: 50px;
+    margin: 350px 0px 16px;
+}
+
+.a-container{
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    height: 400px;
+    padding: 0px 600px;
+}
